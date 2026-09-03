@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores do Oriente - Culinária Árabe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lang-switcher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+</head>
+
+<body>
+    <div class="language-switcher" role="group" aria-label="Seletor de idioma">
+        <div class="language-pill">
+            <span id="language-current-flag" class="language-flag" aria-hidden="true"></span>
+            <span id="language-current-label" class="language-label">Português</span>
+            <button id="language-menu-toggle" class="language-caret-btn" type="button" aria-label="Abrir seleção de idioma"
+                aria-expanded="false"></button>
+        </div>
+        <div id="language-dropdown" class="language-dropdown" role="menu" aria-label="Escolher idioma">
+            <button id="language-alt-option" class="language-option-item" type="button" role="menuitem">
+                <span id="language-alt-flag" class="language-flag" aria-hidden="true"></span>
+                <span id="language-alt-label">English</span>
+            </button>
+        </div>
+    </div>
+    <header>
+        <h1><b>Sabores da Terra</b></h1>
+        <p>Descubra a rica e aromática culinária árabe, uma jornada de sabores que atravessa séculos de tradição.</p>
+    </header>
+
+
+    <nav>
+
+        <div class="user-icon">
+            <a href="formulário.html"><i class="fas fa-user"></i></a>
+        </div>
+
+        <ul>
+
+            <li><a href="#pratos">Pratos Principais</a></li>
+            <li><a href="#entradas">Entradas Tradicionais</a></li>
+            <li><a href="#sobremesas">Sobremesas</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#historia">História</a></li>
+
+        </ul>
+
+        <div class="reserve-icon">
+            <a href="reserva.html">
+                <i class="fas fa-calendar-alt"></i> <span>Reserva</span>
+            </a>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <section id="pratos">
+            <h2>Pratos Principais</h2>
+
+            <div class="prato">
+                <div class="prato-img" style="background-image: url('img/kebab.webp');"></div>
+                <div class="prato-desc">
+                    <h3>Kebab</h3>
+                    <p>O kebab é um dos pratos mais icônicos da culinária árabe, feito com carne (geralmente cordeiro ou
+                        frango) marinada e grelhada em espetos. Servido com pão árabe, vegetais frescos e molhos
+                        característicos.</p>
+                    <h3><span style="color: #8B0000;">R$25,00</span></h3>
+                </div>
+            </div>
+
+            <div class="prato">
+                <div class="prato-img" style="background-image: url('img/shawarma.webp');"></div>
+                <div class="prato-desc">
+                    <h3>Shawarma</h3>
+                    <p>O shawarma consiste em fatias de carne empilhadas em um espeto vertical e assadas lentamente.
+                        Tradicionalmente servido em pão sírio com tahine, homus e picles.</p>
+                    <h3><span style="color: #8B0000;">R$30,00</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="entradas">
+            <h2>Entradas Tradicionais</h2>
+
+            <div class="prato">
+                <div class="prato-img" style="background-image: url('img/homus.jpg');"></div>
+                <div class="prato-desc">
+                    <h3>Homus</h3>
+                    <p>Pasta cremosa feita de grão-de-bico, tahine (pasta de gergelim), suco de limão e alho. Um dos
+                        acompanhamentos mais populares no mundo árabe.</p>
+                    <h3><span style="color: #8B0000;">R$15,00</span></h3>
+                </div>
+            </div>
+
+            <div class="prato">
+                <div class="prato-img" style="background-image: url('img/tabule.webp');"></div>
+                <div class="prato-desc">
+                    <h3>Tabule</h3>
+                    <p>Salada refrescante feita com trigo bulgur, tomate, pepino, salsa, hortelã e temperada com limão e
+                        azeite de oliva.</p>
+                    <h3><span style="color: #8B0000;">R$20,00</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobremesas">
+            <h2>Doces e Sobremesas</h2>
+
+            <div class="prato">
+                <div class="prato-img" style="background-image: url('img/Baklava.jpg');"></div>
+                <div class="prato-desc">
+                    <h3>Baklava</h3>
+                    <p>Doce folhado feito com camadas de massa filo, recheado com nozes ou pistache e banhado em calda
+                        de mel ou açúcar.</p>
+                    <h3><span style="color: #8B0000;">R$15,00</span></h3>
+                </div>
+            </div>
+
+            <div class="prato">
+                <div class="prato-img" style="background-image: url('img/kunafa.jpg');"></div>
+                <div class="prato-desc">
+                    <h3>Kunafa</h3>
+                    <p>Sobremesa feita com fios de massa kataifi, recheada com queijo ou creme, assada até ficar
+                        crocante e depois banhada em calda doce.</p>
+                    <h3><span style="color: #8B0000;">R$35,00</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="bebidas">
+            <h2>Bebidas Tradicionais</h2>
+            <p>Conheça as bebidas que acompanham a culinária árabe:</p>
+
+            <div class="bebidas-container">
+                <div class="bebida">
+                    <div class="bebida-img" style="background-image: url('img/cafe-arabe.jpg');"></div>
+                    <h3>Café Árabe</h3>
+                    <p>Preparado com grãos levemente torcidos e cardamomo, servido em pequenas xícaras.</p>
+                    <h3><span style="color: #8B0000;">R$5,00</span></h3>
+                </div>
+
+                <div class="bebida">
+                    <div class="bebida-img" style="background-image: url('img/chá-menta.webp');"></div>
+                    <h3>Chá de Menta</h3>
+                    <p>Chá verde com folhas frescas de hortelã, muito popular no Magrebe.</p>
+                    <h3><span style="color: #8B0000;">R$5,00</span></h3>
+                </div>
+
+                <div class="bebida">
+                    <div class="bebida-img" style="background-image: url('img/jallab.jpg');"></div>
+                    <h3>Jallab</h3>
+                    <p>Bebida refrescante feita com xarope de tâmaras, uvas e água de rosas.</p>
+                    <h3><span style="color: #8B0000;">R$6,00</span></h3>
+                </div>
+
+                <div class="bebida">
+                    <div class="bebida-img" style="background-image: url('img/ayran.jpg');"></div>
+                    <h3>Ayran</h3>
+                    <p>Bebida de iogurte salgado e fresco, perfeita para acompanhar pratos condimentados.</p>
+                    <h3><span style="color: #8B0000;">R$10,00</span></h3>
+                </div>
+
+                <div class="bebida">
+                    <div class="bebida-img" style="background-image: url('img/laban.jpg');"></div>
+                    <h3>laban</h3>
+                    <p>Bebida láctea fermentada, feita de leite de vaca, cabra ou camelo.</p>
+                    <h3><span style="color: #8B0000;">R$5,00</span></h3>
+                </div>
+
+                <div class="bebida">
+                    <div class="bebida-img" style="background-image: url('img/karak-chai.jpg');"></div>
+                    <h3>Karak chai</h3>
+                    <p>Mistura de chá preto forte com especiarias, como cardamomo, canela, gengibre e cravo.</p>
+                    <h3><span style="color: #8B0000;">R$10,00</span></h3>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="historia">
+            <h2>História da Culinária Árabe</h2>
+            <p>A culinária árabe tem suas raízes na antiga cultura beduína, desenvolvida ao longo de séculos de trocas
+                comerciais e culturais ao longo da Rota da Seda. Influenciada pelas cozinhas persa, turca, indiana e
+                mediterrânea, a gastronomia árabe se caracteriza pelo uso de especiarias aromáticas, grãos, carnes
+                (especialmente cordeiro) e vegetais frescos.</p>
+            <p style="margin-top: 1rem;">Cada região do mundo árabe desenvolveu suas próprias variações de pratos, mas
+                mantendo uma base comum de sabores e técnicas de preparo que unem esses povos através da comida.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sabores da Terra</p>
+        <p style="margin-top: 0.5rem;"></p>
+    </footer>
+    <script src="i18n.js" defer></script>
+</body>
+
+</html>

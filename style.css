@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --vermelho-arabe: #8B0000;
+    --dourado: #f8d7a4;
+    --creme: #f9f5f0;
+}
+
+body {
+    background-color: var(--creme);
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem 1rem;
+
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+nav a:hover {
+    color: var(--dourado);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dourado);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav {
+    background-color: #8B0000;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.user-icon {
+    position: absolute;
+    left: 2rem;
+
+}
+
+.user-icon a {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.user-icon a:hover {
+    color: #f8d7a4;
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+
+}
+
+.reserve-icon {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reserve-icon a {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.reserve-icon a:hover {
+    color: #f8d7a4;
+    transform: scale(1.1);
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(139, 0, 0, 0.2);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: var(--vermelho-arabe);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--dourado);
+}
+
+
+.prato {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.prato:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.prato-img {
+    flex: 1;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+
+.prato-img:hover {
+    transform: scale(1.03);
+}
+
+.prato-desc {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.prato h3 {
+    color: var(--vermelho-arabe);
+    margin-bottom: 1rem;
+
+
+}
+
+.bebidas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.bebida {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.bebida:hover {
+    transform: translateY(-5px);
+}
+
+.bebida-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.bebida-img:hover {
+    transform: scale(1.05);
+}
+
+.bebida h3 {
+    color: var(--vermelho-arabe);
+    padding: 1rem 1rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.bebida p {
+    padding: 0 1rem 1.5rem;
+    color: #555;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 3rem 1rem 1rem;
+    }
+    
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* Navegação */
+    nav {
+        flex-direction: column;
+        padding: 0.5rem;
+        position: relative;
+    }
+    
+    .user-icon, .reserve-icon {
+        position: static;
+        transform: none;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+    
+    nav li {
+        margin: 0;
+        text-align: center;
+    }
+    
+    /* Conteúdo */
+    .container {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+    
+    .prato {
+        gap: 1rem;
+    }
+    
+    .prato-img {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Header */
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    /* Cards de pratos */
+    .prato-desc {
+        padding: 0;
+    }
+    
+    .prato h3, .bebida h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Bebidas */
+    .bebidas-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Seção de história */
+    #historia p {
+        text-align: justify;
+    }
+}
+
+/* Melhorias para tablets na horizontal */
+@media (max-width: 992px) and (orientation: landscape) {
+    .prato {
+        flex-direction: column !important;
+    }
+    
+    .prato-img {
+        width: 100%;
+    }
+}
